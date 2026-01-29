@@ -171,7 +171,7 @@ export const ROAD_SEGMENTS: RoadSegment[] = [
   { 
     id: 'rs1', 
     name: '斑斓海岸段', 
-    image: 'https://private-user-images.githubusercontent.com/124782344/541967991-3b0c1430-0e14-4555-a323-d7b7790e0360.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Njk2NTI4ODQsIm5iZiI6MTc2OTY1MjU4NCwicGF0aCI6Ii8xMjQ3ODIzNDQvNTQxOTY3OTkxLTNiMGMxNDMwLTBlMTQtNDU1NS1hMzIzLWQ3Yjc3OTBlMDM2MC5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMTI5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDEyOVQwMjA5NDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jNGUyNzg3NWU4ODNiYTY4YmNkNDAxZDE1MGVlODhmYzRiZGQyNDYyNjJmZmFkZjU5YzlmOTJiZDkxZWU0NThmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.OseHvOuXHcP7yg0ed7NqpR-0Veki9eh6GMMwDIXBDWg', 
+    image: 'https://mmecoa.qpic.cn/sz_mmecoa_jpg/geeuaCSw4CjUkA2lLWIevDPuoyottyDONicxFvU6nQ6svLyqMW4icsXsSicPVWWujQus79lNtZiaNGU48ObRrwCfcg/640?wx_fmt=jpeg&from=appmsg&wxfrom=13&tp=wxpic', 
     description: '山海田园，一口气看遍！',
     fullIntro: '有山、有海、有故事，斑斓海岸已经为你准备好了！🚗💨',
     locationInfo: '黄避岙乡，西沪港',
