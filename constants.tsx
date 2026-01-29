@@ -171,7 +171,7 @@ export const ROAD_SEGMENTS: RoadSegment[] = [
   { 
     id: 'rs1', 
     name: '斑斓海岸段', 
-    image: 'https://mmecoa.qpic.cn/sz_mmecoa_jpg/geeuaCSw4CjUkA2lLWIevDPuoyottyDONicxFvU6nQ6svLyqMW4icsXsSicPVWWujQus79lNtZiaNGU48ObRrwCfcg/640?wx_fmt=jpeg&from=appmsg&wxfrom=13&tp=wxpic', 
+    image: 'https://pic.rmb.bdstatic.com/bjh/down/bc865095877a6c094fd52254c77541de.jpeg@wm_2,t_55m+5a625Y+3L+Wlh+WIm+aXhea4uOmbhuWbog==,fc_ffffff,ff_U2ltSGVp,sz_27,x_17,y_17', 
     description: '山海田园，一口气看遍！',
     fullIntro: '有山、有海、有故事，斑斓海岸已经为你准备好了！🚗💨',
     locationInfo: '黄避岙乡，西沪港',
