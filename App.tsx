@@ -1,8 +1,7 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { View, CommunityCircle, RoadBook, RoadSegment, POI, Stay, InterestCategory, RoadEvent } from './types';
 import { COMMUNITIES } from './constants';
-import { db } from './storageService';
 import HubScreen from './components/HubScreen';
 import CommunityScreen from './components/CommunityScreen';
 import CommunityListScreen from './components/CommunityListScreen';
@@ -23,11 +22,6 @@ import Header from './components/Header';
 
 const App: React.FC = () => {
   const [currentView, setCurrentView] = useState<View>(View.EXPLORE);
-  
-  // --- 持久化状态 ---
-  const [bookedEventIds, setBookedEventIds] = useState<string[]>(() => db.get('booked_events', []));
-  const [joinedCommunityIds, setJoinedCommunityIds] = useState<string[]>(() => db.get('joined_communities', []));
-
   const [activeCommunity, setActiveCommunity] = useState<CommunityCircle | null>(null);
   const [selectedRoadBook, setSelectedRoadBook] = useState<RoadBook | null>(null);
   const [selectedRoadSegment, setSelectedRoadSegment] = useState<RoadSegment | null>(null);
@@ -36,28 +30,6 @@ const App: React.FC = () => {
   const [selectedInterest, setSelectedInterest] = useState<InterestCategory | null>(null);
   const [selectedEvent, setSelectedEvent] = useState<RoadEvent | null>(null);
   const [prevViewBeforeSub, setPrevViewBeforeSub] = useState<View>(View.DISCOVER);
-
-  // --- 数据库同步副作用 ---
-  useEffect(() => {
-    db.set('booked_events', bookedEventIds);
-  }, [bookedEventIds]);
-
-  useEffect(() => {
-    db.set('joined_communities', joinedCommunityIds);
-  }, [joinedCommunityIds]);
-
-  // --- 交互处理器 ---
-  const handleToggleEventBooking = (eventId: string) => {
-    setBookedEventIds(prev => 
-      prev.includes(eventId) ? prev.filter(id => id !== eventId) : [...prev, eventId]
-    );
-  };
-
-  const handleToggleCommunityJoin = (communityId: string) => {
-    setJoinedCommunityIds(prev => 
-      prev.includes(communityId) ? prev.filter(id => id !== communityId) : [...prev, communityId]
-    );
-  };
 
   const handleCommunityClick = (comm: CommunityCircle) => {
     if (comm.id === 'main-hub') {
@@ -160,7 +132,6 @@ const App: React.FC = () => {
                            currentView === View.EVENT_DETAIL ||
                            currentView === View.POI_DETAIL ||
                            currentView === View.ROAD_SEGMENT_DETAIL;
-
   const showBottomNav = [
     View.HUB,
     View.EXPLORE,
@@ -217,8 +188,6 @@ const App: React.FC = () => {
             community={activeCommunity} 
             onBack={goBack} 
             onEventClick={handleEventClick}
-            isJoined={joinedCommunityIds.includes(activeCommunity.id)}
-            onToggleJoin={() => handleToggleCommunityJoin(activeCommunity.id)}
           />
         )}
 
@@ -280,20 +249,11 @@ const App: React.FC = () => {
         )}
 
         {currentView === View.TRIP && (
-          <CalendarScreen 
-            onEventClick={handleEventClick} 
-            bookedEventIds={bookedEventIds}
-            onToggleBooking={handleToggleEventBooking}
-          />
+          <CalendarScreen onEventClick={handleEventClick} />
         )}
 
         {currentView === View.EVENT_DETAIL && selectedEvent && (
-          <EventDetailScreen 
-            event={selectedEvent} 
-            onBack={goBack} 
-            isBooked={bookedEventIds.includes(selectedEvent.id)}
-            onToggleBooking={() => handleToggleEventBooking(selectedEvent.id)}
-          />
+          <EventDetailScreen event={selectedEvent} onBack={goBack} />
         )}
 
         {currentView === View.ME && (
@@ -302,18 +262,7 @@ const App: React.FC = () => {
                 <span className="material-symbols-outlined text-4xl text-slate-300">person</span>
             </div>
             <h3 className="text-xl font-black mb-2 text-slate-900 italic tracking-tighter">我的足迹</h3>
-            <p className="text-slate-500 text-xs mb-8">漫游〇号公路，留下你的专属记忆。</p>
-            
-            <div className="grid grid-cols-2 gap-4 w-full">
-               <div className="bg-white p-6 rounded-[32px] border border-slate-100 shadow-sm">
-                  <p className="text-2xl font-black text-primary">{bookedEventIds.length}</p>
-                  <p className="text-[10px] font-black uppercase text-slate-400 mt-1">预约活动</p>
-               </div>
-               <div className="bg-white p-6 rounded-[32px] border border-slate-100 shadow-sm">
-                  <p className="text-2xl font-black text-secondary">{joinedCommunityIds.length}</p>
-                  <p className="text-[10px] font-black uppercase text-slate-400 mt-1">加入圈子</p>
-               </div>
-            </div>
+            <p className="text-slate-500 text-xs">漫游〇号公路，留下你的专属记忆。</p>
           </div>
         )}
       </main>
