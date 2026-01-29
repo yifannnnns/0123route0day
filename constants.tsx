@@ -164,7 +164,7 @@ export const POIS: POI[] = [
   { id: 'bl_food_6', name: '落日咖啡', category: 'food', lat: 29.5420, lng: 121.7830, description: '象山绝佳日落观测点，晚霞中的极致浪漫。', tags: ['日落', '网红'], image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=1000' },
 
   // --- 斑斓海岸段：运动 (Scenery/Sport) ---
-  { id: 'bl_sport_1', name: '艇好玩帆船营地', category: 'scenery', lat: 29.5080, lng: 121.8140, description: '专业水上运动基地，提供帆船、桨板体验。', tags: ['帆船', '运动'], image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&w=1000' }
+  { id: 'bl_sport_1', name: '艇好玩帆船营地', category: 'scenery', lat: 29.5080, lng: 121.8140, description: '专业水上运动基地，提供帆船、桨板体验。', tags: ['帆船', '运动'], image: 'https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/480187961_953886250252896_2959170990121672560_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=amigyUnPY7YQ7kNvwE_lCjH&_nc_oc=AdkttgZl5lOphyowSBvkYC76EYnDuEJY7zCRrDJWK-kMua43Xx2MYAP73xqU5gmnGY4&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=cpVWoZgMEPqfqUEJkxgTLA&oh=00_AfpmjlGaBvRGnFiOR8o8IZ7hxe2BP5lpYYucQ9as8YQiTQ&oe=6980EFD8' }
 ];
 
 export const ROAD_SEGMENTS: RoadSegment[] = [
