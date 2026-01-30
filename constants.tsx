@@ -153,7 +153,7 @@ export const POIS: POI[] = [
   { id: 'bl_stay_4', name: '南铂酒店', category: 'stay', lat: 29.5240, lng: 121.8000, description: '现代简约风格的精品酒店，视野开阔，远眺海平面。', tags: ['精品', '海景'], image: 'https://images.unsplash.com/photo-1551882319-8eb74825275b?auto=format&w=800' },
 
   // --- 斑斓海岸段：艺文空间 (Scenery) ---
-  { id: 'bl_art_1', name: '斑斓海岸艺术中心', category: 'scenery', lat: 29.5350, lng: 121.7880, description: '斑斓海岸艺术中心位于〇号公路起点。它是一处集环保与疗愈艺术展览、滨海日落景观及主题轻餐饮的海边艺文空间。', tags: ['艺术', '人文', '旧船厂'], image: 'https://images.unsplash.com/photo-1554188248-986adbb73be4?auto=format&fit=crop&q=80&w=1000' },
+  { id: 'bl_art_1', name: '斑斓海岸艺术中心', category: 'scenery', lat: 29.5350, lng: 121.7880, description: '斑斓海岸艺术中心位于〇号公路起点。它是一处集环保与疗愈艺术展览、滨海日落景观及主题轻餐饮的海边艺文空间。', tags: ['艺术', '人文', '设计师'], image: 'https://inews.gtimg.com/om_bt/OfDw9YCx_AK2E9YlUcDYs1pd0FdvldOg5K3zkKFR3G398AA/641' },
 
   // --- 斑斓海岸段：餐饮 (Food) ---
   { id: 'bl_food_1', name: '黄鱼咖啡', category: 'food', lat: 29.5270, lng: 121.7940, description: '象山特色的海味咖啡馆，伴随海风品味醇香。', tags: ['特色', '咖啡'] },
