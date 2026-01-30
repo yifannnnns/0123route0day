@@ -17,10 +17,10 @@ const RoadSegmentDetailScreen: React.FC<RoadSegmentDetailScreenProps> = ({ segme
   // 针对“斑斓海岸”段补充的氛围图片列表
   const atmosphereImages = [
     segment.image, // 用户提供的主图
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1000", // 纯净海滩
-    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=1000", // 绝美日落
-    "https://images.unsplash.com/photo-1554188248-986adbb73be4?auto=format&fit=crop&q=80&w=1000", // 艺术中心氛围
-    "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&q=80&w=1000"  // 海岸公路感
+    "https://img2.baidu.com/it/u=3574386387,3132023125&fm=253&fmt=auto&app=138&f=JPEG?w=783&h=500", // 纯净海滩
+    "https://www.moa.gov.cn/ztzl/2019xclyxnl/201907/W020190703504635080718.jpg", // 海上屋子
+    "https://inews.gtimg.com/om_bt/OfDw9YCx_AK2E9YlUcDYs1pd0FdvldOg5K3zkKFR3G398AA/641", // 艺术中心氛围
+    "https://pics0.baidu.com/feed/377adab44aed2e7382d54295554fe59b87d6fa2e.jpeg@f_auto?token=53dd25d47b5d2b659b385a81031b4f10"  // 田园风光感
   ];
 
   const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
