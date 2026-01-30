@@ -200,7 +200,7 @@ export const ROAD_BOOKS: RoadBook[] = [
     title: '〇号公路官方完整指南', 
     author: '象山文旅', 
     type: 'official', 
-    image: 'https://unsplash.com/photos/road-winds-near-the-sea-with-beautiful-scenery-SCFNHX7QLPg',
+    image: 'https://rmtsource.ntv.cn/files/wemedia/images/2503/16/1742062606889203.jpg',
     intro: '官方出品，深度探索象山绝美海岸线。',
     points: [
       { id: 'p1', name: '〇号广场', description: '公路漫游的零公里处。', image: 'https://images.unsplash.com/photo-1506466010722-395ee2bef877?auto=format&w=200', coordinate: { x: 20, y: 30 } },
