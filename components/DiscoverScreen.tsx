@@ -50,7 +50,7 @@ const DiscoverScreen: React.FC<DiscoverScreenProps> = ({
       name: '纵情运动', 
       tag: 'Sports',
       icon: 'fitness_center', 
-      image: 'https://private-user-images.githubusercontent.com/124782344/539118345-7b626959-4380-4a98-b090-da472f4bc20c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjkwODMyMzAsIm5iZiI6MTc2OTA4MjkzMCwicGF0aCI6Ii8xMjQ3ODIzNDQvNTM5MTE4MzQ1LTdiNjI2OTU5LTQzODAtNGE5OC1iMDkwLWRhNDcyZjRiYzIwYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMTIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDEyMlQxMTU1MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hYWRhOWI5Mzg2ODE0MDRmNzg1ZjU1Y2IzMDk2Nzk2ZmI0YmU3ZWViMmIzMmJhNDllMTQ3MDEwMjRiMjI5YWE3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.YcB-jCdLB0QwX0XV2PAwktQo0xbecY14l-A_CxN-lc4',
+      image: 'https://images.unsplash.com/photo-1506527240747-720a3e17b910?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       description: '帆船、骑行、徒步',
       items: [
         { name: '霞光骑行', icon: 'directions_bike', tag: 'New' },
