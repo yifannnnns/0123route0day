@@ -153,7 +153,7 @@ export const POIS: POI[] = [
   { id: 'bl_stay_4', name: '南铂酒店', category: 'stay', lat: 29.5240, lng: 121.8000, description: '现代简约风格的精品酒店，视野开阔，远眺海平面。', tags: ['精品', '海景'], image: 'https://images.unsplash.com/photo-1551882319-8eb74825275b?auto=format&w=800' },
 
   // --- 斑斓海岸段：艺文空间 (Scenery) ---
-  { id: 'bl_art_1', name: '斑斓海岸艺术中心', category: 'scenery', lat: 29.5350, lng: 121.7880, description: '由废旧船厂改造成的艺文美学空间。', tags: ['艺术', '人文', '旧船厂'], image: 'https://images.unsplash.com/photo-1554188248-986adbb73be4?auto=format&fit=crop&q=80&w=1000' },
+  { id: 'bl_art_1', name: '斑斓海岸艺术中心', category: 'scenery', lat: 29.5350, lng: 121.7880, description: '斑斓海岸艺术中心位于〇号公路起点。它是一处集环保与疗愈艺术展览、滨海日落景观及主题轻餐饮的海边艺文空间。', tags: ['艺术', '人文', '旧船厂'], image: 'https://images.unsplash.com/photo-1554188248-986adbb73be4?auto=format&fit=crop&q=80&w=1000' },
 
   // --- 斑斓海岸段：餐饮 (Food) ---
   { id: 'bl_food_1', name: '黄鱼咖啡', category: 'food', lat: 29.5270, lng: 121.7940, description: '象山特色的海味咖啡馆，伴随海风品味醇香。', tags: ['特色', '咖啡'] },
@@ -200,7 +200,7 @@ export const ROAD_BOOKS: RoadBook[] = [
     title: '〇号公路官方完整指南', 
     author: '象山文旅', 
     type: 'official', 
-    image: 'https://imgcdn.thecover.cn/b008ec7b-ffd8-43e1-a7bb-e726eed2b921_1767011135066',
+    image: 'https://unsplash.com/photos/road-winds-near-the-sea-with-beautiful-scenery-SCFNHX7QLPg',
     intro: '官方出品，深度探索象山绝美海岸线。',
     points: [
       { id: 'p1', name: '〇号广场', description: '公路漫游的零公里处。', image: 'https://images.unsplash.com/photo-1506466010722-395ee2bef877?auto=format&w=200', coordinate: { x: 20, y: 30 } },
@@ -238,7 +238,7 @@ export const ROAD_STAYS: Stay[] = [
     id: 'stay-2',
     name: '四季青藤度假酒店',
     type: 'hotel',
-    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&w=800',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTjudemsKekb_lKOC3V-UMC5sA-JXg2yYW-Q&s',
     price: '¥ 680 起',
     rating: '4.7',
     tags: ['度假', '全服务', '高品质'],
@@ -250,7 +250,7 @@ export const ROAD_STAYS: Stay[] = [
     id: 'stay-3',
     name: '海米木木亲子庄园',
     type: 'bnb',
-    image: 'https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&w=800',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjjkHraAnuLxZkuIahzYchHCewkWeg5zexQg&s',
     price: '¥ 450 起',
     rating: '4.9',
     tags: ['亲子', '庄园', '田园'],
@@ -262,7 +262,7 @@ export const ROAD_STAYS: Stay[] = [
     id: 'stay-4',
     name: '南铂酒店',
     type: 'hotel',
-    image: 'https://images.unsplash.com/photo-1551882319-8eb74825275b?auto=format&w=800',
+    image: 'https://dimg04.c-ctrip.com/images/0206912000a5swtc92177_C_750_340_Q70.jpg',
     price: '¥ 520 起',
     rating: '4.6',
     tags: ['现代', '海景', '商务'],
